@@ -8,7 +8,7 @@ RUN apt-get install nginx -y
 
 COPY index1.html /var/www/html/index.html
 
-EXPOSE 80
+EXPOSE 3001
 
 CMD [ "nginx", "-g", "daemon off;" ]
 
@@ -21,7 +21,7 @@ RUN apt-get install nginx -y
 
 COPY index2.html /var/www/html/index.html
 
-EXPOSE 81
+EXPOSE 3002
 
 CMD [ "nginx", "-g", "daemon off;" ]
 
